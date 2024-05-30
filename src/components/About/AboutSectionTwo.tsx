@@ -28,20 +28,18 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                กำลังการผลิต
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                เครื่องจักร 1 ไลน์การผลิต มีกำลังการผลิต 1,000 ตรม.ต่อวัน (ชั่วโมงทำงานที่ 8 ชั่วโมงต่อวัน/2กะ) ดังนั้นจะสามารถผลิตแผ่นคอนกรีตสำเร็จรูปได้ประมาณ 300,000 ตร.ม.ต่อปี กำลังการผลิตดังกล่าวสามารถสร้างทาวน์เฮ้าส์ขนาด 2 ชั้น พื้นที่ใช้สอย 110 ตร.ม. ได้ประมาณ 1,050 ยูนิต หรือคอนโดมิเนียมขนาดห้อง 28 ตรม. ได้ประมาณ 2,700 ยูนิต
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                สถานที่ตั้ง
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                บริษัท ไบร์ท พรีแคสเตอร์ ตั้งอยู่เลขที่ 10/10 หมู่ 10 ต.บางบัวทอง อ.บางบัวทอง จ.นนทบุรี 11110 พื้นที่ประกอบด้วยอาคารสำนักงานและอาคารโรงงาน ขนาด 5,544 ตรม.และ Stock yard ขนาด 4,500 ตรม. บนพื้นที่ 44-1-23 ไร่ เครื่องจักรที่ใช้จะเป็นระบบ Semi Automated Carrousel System ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตเสริมเหล็กสำเร็จรูปอัตโนมัติ นำเข้าเครื่องจักรจากประเทศเยอรมัน
                 </p>
               </div>
               <div className="mb-1">
