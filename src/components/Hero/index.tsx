@@ -12,11 +12,12 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Bright Precaster Co.,Ltd. 
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-coloMain Features
 r-dark sm:text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero..
+                เป็นผู้ผลิตและจำหน่ายชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete System) แบบครบวงจร โดยใช้เครื่องจักรที่เป็นระบบ Semi Automated Carrousel System  ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตสำเร็จรูปด้วยเครื่องจักรระบบอัตโนมัติ  นำเข้าเครื่องจักร จากประเทศเยอรมัน
+
                 </p>
               
               </div>
