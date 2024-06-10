@@ -35,7 +35,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                   >
                     <svg
                       width="18"
@@ -55,7 +55,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                   >
                     <svg
                       width="18"
@@ -77,7 +77,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                   >
                     <svg
                       width="18"
@@ -93,7 +93,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                   >
                   </a>
                 </div>
@@ -109,7 +109,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       Blog
                     </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       Pricing
                     </Link>
@@ -125,7 +125,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       About
                     </Link>
@@ -143,7 +143,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       TOS
                     </Link>
@@ -151,7 +151,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       Privacy Policy
                     </Link>
@@ -159,7 +159,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
                       Refund Policy
                     </Link>
@@ -176,26 +176,26 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="https://www.facebook.com/BrightPrecast"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
-                      Open Support Ticket
+                      FB: Bright Precaster 
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="mailto:Bright_marketing@brightprecaster.com"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
-                      Terms of Use
+                      E-mail
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="tel:021507100101"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
-                      About
+                      Phone: 02-1507100-101
                     </Link>
                   </li>
                 </ul>
@@ -213,7 +213,7 @@ const Footer = () => {
                 href="https://nextjstemplates.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary"
+                className="hover:text-red"
               >
                 Brightprecaster
               </a>

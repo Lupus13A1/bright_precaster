@@ -2,18 +2,11 @@ import { Brand } from "@/types/brand";
 
 const brandsData: Brand[] = [
   {
-    id: 6,
-    name: "Formbold",
-    href: "https://formbold.com",
-    image: "/images/brands/formbold.svg",
-    imageLight: "/images/brands/formbold-light.svg",
-  },
-  {
     id: 1,
     name: "UIdeck",
-    href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
-    imageLight: "/images/brands/uideck-light.svg",
+    href: "#",
+    image: "/images/brands/1-34.png",
+    imageLight: "/images/brands/1-34.png",
   },
   {
     id: 2,
@@ -27,7 +20,7 @@ const brandsData: Brand[] = [
     name: "Lineicons",
     href: "https://lineicons.com",
     image: "/images/brands/lineicons.svg",
-    imageLight: "/images/brands/lineicons-light.svg",
+    imageLight: "/images/brands/",
   },
   {
     id: 4,
@@ -38,6 +31,13 @@ const brandsData: Brand[] = [
   },
   {
     id: 5,
+    name: "PlainAdmin",
+    href: "https://plainadmin.com",
+    image: "/images/brands/plainadmin.svg",
+    imageLight: "/images/brands/plainadmin-light.svg",
+  },
+  {
+    id: 6,
     name: "PlainAdmin",
     href: "https://plainadmin.com",
     image: "/images/brands/plainadmin.svg",
