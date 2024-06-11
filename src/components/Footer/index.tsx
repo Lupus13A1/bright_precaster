@@ -187,7 +187,7 @@ const Footer = () => {
                       href="mailto:Bright_marketing@brightprecaster.com"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red"
                     >
-                      E-mail
+                      Bright_marketing@brightprecaster
                     </Link>
                   </li>
                   <li>

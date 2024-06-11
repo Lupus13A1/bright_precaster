@@ -42,7 +42,7 @@ const AboutSectionTwo = () => {
                 บริษัท ไบร์ท พรีแคสเตอร์ ตั้งอยู่เลขที่ 10/10 หมู่ 10 ต.บางบัวทอง อ.บางบัวทอง จ.นนทบุรี 11110 พื้นที่ประกอบด้วยอาคารสำนักงานและอาคารโรงงาน ขนาด 5,544 ตรม.และ Stock yard ขนาด 4,500 ตรม. บนพื้นที่ 44-1-23 ไร่ เครื่องจักรที่ใช้จะเป็นระบบ Semi Automated Carrousel System ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตเสริมเหล็กสำเร็จรูปอัตโนมัติ นำเข้าเครื่องจักรจากประเทศเยอรมัน
                 </p>
               </div>
-              <div className="mb-1">
+              {/* <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Next.js
                 </h3>
@@ -50,7 +50,7 @@ const AboutSectionTwo = () => {
                   Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
                   consectetur adipiscing elit setim.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default function Home() {
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
     </>
   );
