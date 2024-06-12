@@ -3,10 +3,10 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Icopenh",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+    image: "/images/pastwork/logo_icopenh-1-1022x1024.jpg",
     author: {
       name: "Samuyl Joshi",
       image: "/images/blog/author-01.png",
@@ -17,10 +17,10 @@ const blogData: Blog[] = [
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "PHC Hierarchy",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
+    image: "/images/pastwork/PHC.jpg",
     author: {
       name: "Musharof Chy",
       image: "/images/blog/author-02.png",
@@ -31,10 +31,51 @@ const blogData: Blog[] = [
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "The Cube Loft",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+    image: "/images/pastwork/logo-maxxi-prie2.jpg",
+    author: {
+      name: "Lethium Deo",
+      image: "/images/blog/author-03.png",
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },
+    {
+    id: 4,
+    title: "Green Ville II condominium",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: "/images/pastwork/logo-greenville2.jpg",
+    author: {
+      name: "Lethium Deo",
+      image: "/images/blog/author-03.png",
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },
+      {
+    id: 5,
+    title: "Maxxi-Prime",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: "/images/pastwork/logo-maxxi-prime2.jpg",
+    author: {
+      name: "Lethium Deo",
+      image: "/images/blog/author-03.png",
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },  {
+    id: 6,
+    title: "The Muve บางแค",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: "/images/pastwork/logo-the-muve-บางแค3.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
