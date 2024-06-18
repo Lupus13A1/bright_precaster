@@ -50,8 +50,37 @@ const Contact = () => {
   };
 
   return (
+    
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
+      <div className=" px-2 py-10">
+      <div id="features" className="mx-auto max-w-6xl">
+        <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
+          <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
+            <img src="/images/about/home-1-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
+            <h3 className="my-3 font-display font-medium">ที่ตั้งบริษัท</h3>
+            <a className="mt-1.5 text-sm leading-6 text-secondary-500" href='https://www.google.com/maps/place/%E0%B9%84%E0%B8%9A%E0%B8%A3%E0%B9%8C%E0%B8%97+%E0%B8%9E%E0%B8%A3%E0%B8%B5%E0%B9%81%E0%B8%84%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C+%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94+(+Precast+Concrete+Factory+)/@13.965552,100.378698,18z/data=!4m14!1m7!3m6!1s0x30e289311d5242e9:0xdddff78eefc975c9!2z4LmE4Lia4Lij4LmM4LiXIOC4nuC4o-C4teC5geC4hOC4quC5gOC4leC4reC4o-C5jCDguIjguLPguIHguLHguJQgKCBQcmVjYXN0IENvbmNyZXRlIEZhY3RvcnkgKQ!8m2!3d13.9655516!4d100.3786984!16s%2Fg%2F1jgltzd1q!3m5!1s0x30e289311d5242e9:0xdddff78eefc975c9!8m2!3d13.9655516!4d100.3786984!16s%2Fg%2F1jgltzd1q?hl=th&entry=ttu'>
+            จันทร์ ถึง ศุกร์ 09.00 ถึง 18.00<br></br>
+            บางบัวทอง, นนทบุรี 10/10 หมู่10 รหัสไปรษณีย์ 11110
+            </a>
+          </li>
+          <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
+            <img src="/images/about/mail-alt-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
+            <h3 className="my-3 font-display font-medium">E-mail</h3>
+            <a className="mt-1.5 text-sm leading-6 text-secondary-500" href='mailto:Bright_marketing@brightprecaster.com'>
+              Bright_marketing@brightprecaster.com
+            </a>
+          </li>
+          <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
+            <img src="/images/about/call-medicine-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
+            <h3 className="my-3 font-display font-medium">ติดต่อ</h3>
+            <a className="mt-1.5 text-sm leading-6 text-secondary-500" href='tel:021507100101'>
+              021507100101
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div

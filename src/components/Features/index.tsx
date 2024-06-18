@@ -9,10 +9,9 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="CARROUSEL SYSTEM"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="ระบบ CARROUSEL เป็นระบบการผลิตแผ่นพรีคาสท์แบบอัตโนมัติที่มีประสิทธิภาพสูง ประกอบไปด้วยแพลตฟอร์มหมุนที่แบ่งออกเป็นหลายสถานี แต่ละสถานีจะทำหน้าที่เฉพาะอย่างหนึ่งในกระบวนการผลิต"
             center
           />
-
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature) => (
               <SingleFeature key={feature.id} feature={feature} />
