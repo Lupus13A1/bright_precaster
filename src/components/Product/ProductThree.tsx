@@ -19,9 +19,10 @@ const ProductThree = () => {
                 </div>
 
                 <div
-                    className="grid grid-cols-2 md:grid-cols-2 gap-2 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
+                    className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
                     <img className="hover:opacity-75" src="/images/product/slab1-2.png" />
                     <img className="hover:opacity-75" src="/images/product/slab2-1.png" />
+                    <img className="hover:opacity-75" src="/images/product/Picture2.png" />
                 </div>
 
                 {/* <div className="w-full px-4 lg:w-1/2">
