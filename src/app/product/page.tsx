@@ -18,7 +18,7 @@ const ProductPage = () => {
     <>
       <Breadcrumb
         pageName="Product"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="สินค้า Precast เป็นตัวอย่างที่ดีในการลดเวลาและความยุ่งเหยิงในการก่อสร้าง ด้วยคุณสมบัติที่ทันสมัยและการควบคุมคุณภาพที่เป็นเอกลักษณ์"
       />
       <Product />
       <ProductTwo />

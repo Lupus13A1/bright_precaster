@@ -75,7 +75,7 @@ const Contact = () => {
             <img src="/images/about/call-medicine-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
             <h3 className="my-3 font-display font-medium">ติดต่อ</h3>
             <a className="mt-1.5 text-sm leading-6 text-secondary-500" href='tel:021507100101'>
-              021507100101
+              02-1507100-101
             </a>
           </li>
         </ul>

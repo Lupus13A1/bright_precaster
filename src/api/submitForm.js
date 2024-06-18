@@ -7,7 +7,7 @@ mongoose.connect(MONGOBD_URI,{useNewUrlParser: true, useUnifiedTopology: true })
 const FromSchema = new mongoose.Schema({
     name: String,
     email: String,
-    messeage: String,
+    messeage: String, 
 });
 
 const FormModel = mongoose.models.Form || mongoose.model('Form', FormSchema);
