@@ -14,51 +14,152 @@ return (
 <>
     <Breadcrumb pageName="pastwork" description="ผลงงานที่ผ่านมาทั้งหมด" />
 
-    <section className="pb-[120px] pt-[120px]">
-        <div className="container">
-            <div className="h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
-                <div className="container mx-auto px-4 py-8">
-                    <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
-                        ผลงงานที่ผ่านมาทั้งหมด
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                            <img src="/images/pastwork/Curator.png" alt="Heroicons"
-                                className="w-full h-64 object-cover" />
-                            <div className="p-4 md:p-6">
-                                <h3 className="text-xl font-semibold text-orange-500 dark:text-orange-300 mb-2">
-                                    Curator
-                                </h3>
-                                <a href="/curator"
-                                    className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full">
-                                    Learn More
-                                </a>
-                            </div>
+    <section className="body-font">
+        <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-wrap m-4">
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/Britania Ratchaphruek.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/britania">
+                                Britania Ratchaphruek-Nakhon in
+                            </a>
                         </div>
+                    </div>
+                </div>
 
-                        {/* <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                            <img src="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg"
-                                alt="Hero Patterns" className="w-full h-64 object-cover" />
-                            <div className="p-4 md:p-6">
-                                <h3 className="text-xl font-semibold text-cyan-500 dark:text-cyan-300 mb-2">
-                                    Hero Patterns
-                                </h3>
-                                <p className="text-gray-700 dark:text-gray-300 mb-4 two-lines">
-                                    A collection of over 100 free MIT-licensed high-quality SVG patterns for you to use
-                                    in your web projects.
-                                </p>
-                                <a href="#"
-                                    className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div> */}
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/Curator.png" alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/curator">
+                                Curator Ratchapruek-Surinthorn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center"
+                            src="/images/pastwork/Richton Suan Luang-Phatthanakan.jpg" alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/richton">
+                                Richton Suan Luang-Phatthanakan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/Richy Richton เพิ่มสิน.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/richyrichton">
+                                Richy Richton เพิ่มสิน
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/Astoria-Ratchaphruek.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/astoria">
+                                The Astoria ราชพฤกษ์ รัตนาธิเบศร์
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/logo_icopenh-1-1022x1024.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/icopenh">
+                                Icopenh สุขุมวิท76
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/PHC.jpg" alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/phc">
+                                PHC Hierarchy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/Cube.png" alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/cube">
+                                The Cube Loft
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/logo-greenville2.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/green">
+                                Green Ville II condominium
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/logo-the-muve-บางแค3.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/muve">
+                                The Muve บางแค
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center" src="/images/pastwork/logo-maxxi-prime2.jpg"
+                            alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/maxxi">
+                                Maxxi-Prime
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 md:w-1/3">
+                    <div className=" border-2 rounded-lg overflow-hidden">
+                        <img className="object-cover object-center"
+                            src="/images/pastwork/288071781_116766511053366_6415027058580615632_n.jpg" alt="blog" />
+                        <div className="p-6">
+                            <a className="leading-relaxed mb-3 sm:text-lg" href="/noble">
+                                Noble Curve
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 </>
 );
