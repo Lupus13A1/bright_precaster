@@ -2,15 +2,13 @@ import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
 const ProductTwo = () => {
-  return (
-    <section className="py-16 md:py-20 lg:py-28">
-      <div className="container">
+return (
+<section className="py-16 md:py-20 lg:py-28">
+    <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center">
                 <div className="w-full px-4 lg:w-1/2">
-                    <SectionTitle title="Wall special"
-                        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-                        mb="44px" />
+                    <SectionTitle title="Wall special" paragraph="" mb="44px" />
 
                     <div className="mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
                     </div>
@@ -33,10 +31,10 @@ const ProductTwo = () => {
                 </div> */}
             </div>
         </div>
-      </div>
-    </section>
-    
-  );
+    </div>
+</section>
+
+);
 };
 
 export default ProductTwo;

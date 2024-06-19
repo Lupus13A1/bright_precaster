@@ -1,18 +1,15 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
+const ProductSix = () => {
 
-const ProductThree = () => {
-
-  return (
-   <section id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
+return (
+<section className="py-16 md:py-20 lg:py-28">
+    <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center">
                 <div className="w-full px-4 lg:w-1/2">
-                    <SectionTitle title="Slab"
-                        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-                        mb="44px" />
+                    <SectionTitle title="Footing" paragraph="" mb="44px" />
 
                     <div className="mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
                     </div>
@@ -20,9 +17,9 @@ const ProductThree = () => {
 
                 <div
                     className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                    <img className="hover:opacity-75" src="/images/product/slab1-2.png" />
-                    <img className="hover:opacity-75" src="/images/product/slab2-1.png" />
-                    <img className="hover:opacity-75" src="/images/product/Picture2.png" />
+                    <img className="hover:opacity-75" src="/images/product/footing1-1.png" />
+                    <img className="hover:opacity-75" src="/images/product/footing2-1.png" />
+                    <img className="hover:opacity-75" src="/images/product/footing3-1.jpg" />
                 </div>
 
                 {/* <div className="w-full px-4 lg:w-1/2">
@@ -35,9 +32,9 @@ const ProductThree = () => {
                 </div> */}
             </div>
         </div>
-      </div>
-    </section>
-  );
+    </div>
+</section>
+);
 };
 
-export default ProductThree;
+export default ProductSix;

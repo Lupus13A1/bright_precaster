@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
-
 const ProductSix = () => {
 
   return (
@@ -11,7 +10,7 @@ const ProductSix = () => {
             <div className="-mx-4 flex flex-wrap items-center">
                 <div className="w-full px-4 lg:w-1/2">
                     <SectionTitle title="Footing"
-                        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+                        paragraph=""
                         mb="44px" />
 
                     <div className="mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
