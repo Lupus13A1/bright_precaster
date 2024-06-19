@@ -5,14 +5,14 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-title: "pastwork",
+title: "Pastwork",
 // other metadata
 };
 
 const Blog = () => {
 return (
 <>
-    <Breadcrumb pageName="pastwork" description="ผลงงานที่ผ่านมาทั้งหมด" />
+    <Breadcrumb pageName="Pastwork" description="ผลงงานที่ผ่านมาทั้งหมด" />
 
     <section className="body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -31,7 +31,7 @@ return (
 
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Curator.png" alt="blog" />
+                        <img className="object-cover object-center" src="/images/pastwork/Curator(2).png" alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/curator">
                                 Curator Ratchapruek-Surinthorn
