@@ -16,9 +16,9 @@ return (
 
                 <div
                     className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                    <img className="hover:opacity-75" src="/images/product/wallSpeical3.jpg" />
-                    <img className="hover:opacity-75" src="/images/product/wallSpeical4.jpg" />
-                    <img className="hover:opacity-75" src="/images/product/wallSpeical5.jpg" />
+                    <img className="hover:opacity-75" src="/images/product/wallSpeical4-removebg-preview (1).png" style={{ borderRadius: '10px' }}/>
+                    <img className="hover:opacity-75" src="/images/product/wallSpeical5-removebg-preview.png" style={{ borderRadius: '9px' }}/>
+                    <img className="hover:opacity-75" src="/images/product/wallSpeical3-removebg-preview.png" style={{ borderRadius: '9px' }}/>
                 </div>
 
                 {/* <div className="w-full px-4 lg:w-1/2">

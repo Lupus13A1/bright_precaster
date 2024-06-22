@@ -17,8 +17,8 @@ return (
 
                 <div
                     className="grid grid-cols-2 md:grid-cols-2 gap-2 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                    <img className="hover:opacity-75" src="/images/product/beam1-1-768x589.png" />
-                    <img className="hover:opacity-75" src="/images/product/beam2-1-768x587.png" />
+                    <img className="hover:opacity-75" src="/images/product/beam1-1-768x589.png" style={{ borderRadius: '9px' }}/>
+                    <img className="hover:opacity-75" src="/images/product/beam2-1-768x587.png" style={{ borderRadius: '9px' }}/>
                 </div>
 
                 {/* <div className="w-full px-4 lg:w-1/2">

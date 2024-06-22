@@ -15,12 +15,14 @@ const AboutSectionTwo = () => {
                 alt="about image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                style={{ borderRadius: '10px' }}
               />
               <Image
                 src="/images/about/Picture4.png"
                 alt="about image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                style={{ borderRadius: '10px' }}
               />
             </div>
           </div>

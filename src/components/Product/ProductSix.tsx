@@ -19,9 +19,9 @@ const ProductSix = () => {
 
                 <div
                     className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                    <img className="hover:opacity-75" src="/images/product/footing1-1.png" />
-                    <img className="hover:opacity-75" src="/images/product/footing2-1.png" />
-                    <img className="hover:opacity-75" src="/images/product/footing3-1.jpg" />
+                    <img className="hover:opacity-75" src="/images/product/footing1-1.png" style={{ borderRadius: '9px' }}/>
+                    <img className="hover:opacity-75" src="/images/product/footing2-1.png" style={{ borderRadius: '9px' }}/>
+                    <img className="hover:opacity-75" src="/images/product/footing3-1.jpg" style={{ borderRadius: '9px' }}/>
                 </div>
 
                 {/* <div className="w-full px-4 lg:w-1/2">
