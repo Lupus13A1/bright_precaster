@@ -185,9 +185,9 @@ const [isThai, setIsThai] = useState(true); // State to track current language
                 </nav>
               </div>
                <div className="flex items-center justify-end pr-16 lg:pr-0">
-                 <button onClick={toggleLanguage}>
+                 {/* <button onClick={toggleLanguage}>
                   {isThai ? "English" : "ภาษาไทย"}
-                </button>
+                </button> */}
                 <div>
                   <ThemeToggler />
                 </div>
