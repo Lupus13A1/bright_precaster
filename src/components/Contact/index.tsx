@@ -1,8 +1,7 @@
 "use client";
 
-
-import { useState } from 'react';
 import NewsLatterBox from "./NewsLatterBox";
+import { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,29 +22,24 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/submitForm', {
+      const response = await fetch('/api/mongo', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        // จัดการเมื่อสำเร็จ
-        alert('ส่งฟอร์มสำเร็จ');
-        // รีเซ็ตฟอร์ม
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
+        alert('Form submitted successfully');
+        setFormData({ name: '', email: '', message: '' });
       } else {
-        // จัดการเมื่อผิดพลาด
-        alert('เกิดข้อผิดพลาดในการส่งฟอร์ม');
+        alert('Error submitting form');
+        console.log(response)
       }
     } catch (error) {
       console.error('Error:', error);
+      alert('Error submitting form');
     }
   };
 
