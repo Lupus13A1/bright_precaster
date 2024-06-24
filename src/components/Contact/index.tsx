@@ -4,42 +4,31 @@ import NewsLatterBox from "./NewsLatterBox";
 import { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch('/api/mongo', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
-        alert('Form submitted successfully');
-        setFormData({ name: '', email: '', message: '' });
+      const data = await res.json();
+      if (data.success) {
+        alert('Message sent successfully!');
       } else {
-        alert('Error submitting form');
-        console.log(response)
+        alert('Error sending message.');
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error submitting form');
+      alert('Error sending message.');
     }
   };
 
