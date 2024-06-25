@@ -38,22 +38,7 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
-// const [isThai, setIsThai] = useState(true); // State to track current language
-
-//   const toggleLanguage = () => {
-//     setIsThai(!isThai); // Toggle between Thai and English
-//   };
-
-//   const translations = {
-//   "เป็นผู้ผลิตและจำหน่ายชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete System) แบบครบวงจร โดยใช้เครื่องจักรที่เป็นระบบ Semi Automated Carrousel System  ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตสำเร็จรูปด้วยเครื่องจักรระบบอัตโนมัติ  นำเข้าเครื่องจักร จากประเทศเยอรมัน":
-//     "Manufacturer and distributor of precast concrete components (Precast Concrete System) complete with a Semi Automated Carrousel System, an automated precast production system imported from Germany.",
-// };
-//   // Function to translate text based on current language state
-//   const translateText = (text) => {
-//     return isThai ? translations[text] || text : text;
-//   };
-
-const [isThai, setIsThai] = useState(true); // State to track current language
+  const [isThai, setIsThai] = useState(true); // State to track current language
 
   const toggleLanguage = () => {
     setIsThai(!isThai); // Toggle between Thai and English
@@ -63,7 +48,6 @@ const [isThai, setIsThai] = useState(true); // State to track current language
   const translateText = (text) => {
       return isThai ? (translations.th[text] || text) : (translations.en[text] || text);
   };
-
   return (
     <>
       <header
@@ -185,9 +169,9 @@ const [isThai, setIsThai] = useState(true); // State to track current language
                 </nav>
               </div>
                <div className="flex items-center justify-end pr-16 lg:pr-0">
-                 {/* <button onClick={toggleLanguage}>
+                 <button onClick={toggleLanguage}>
                   {isThai ? "Eng" : "ไทย"}
-                </button> */}
+                </button>
                 <div>
                   <ThemeToggler />
                 </div>

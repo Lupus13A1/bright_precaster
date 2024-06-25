@@ -8,6 +8,7 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Video from "@/components/Video";
 import { NextResponse } from "next/server";
+import { translations } from "@/components/translation/translations";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
