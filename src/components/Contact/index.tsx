@@ -1,51 +1,34 @@
 "use client";
 
-
-import { useState } from 'react';
 import NewsLatterBox from "./NewsLatterBox";
+import { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch('/api/submitForm', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
-        // จัดการเมื่อสำเร็จ
-        alert('ส่งฟอร์มสำเร็จ');
-        // รีเซ็ตฟอร์ม
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
+      const data = await res.json();
+      if (data.success) {
+        alert('Message sent successfully!');
       } else {
-        // จัดการเมื่อผิดพลาด
-        alert('เกิดข้อผิดพลาดในการส่งฟอร์ม');
+        alert('Error sending message.');
       }
     } catch (error) {
-      console.error('Error:', error);
+      alert('Error sending message.');
     }
   };
 
