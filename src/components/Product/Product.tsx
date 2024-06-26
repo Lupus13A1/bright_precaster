@@ -1,7 +1,23 @@
-import Image from "next/image";
+'use client';
+
+import React, { useState } from "react";
+import Modal from "react-modal";
 import SectionTitle from "../Common/SectionTitle";
 
 const Product = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState("");
+
+    const openModal = (imageSrc) => {
+        setSelectedImage(imageSrc);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+        setSelectedImage("");
+    };
+
     return (
         <section id="about" className="pt-16 md:pt-20 lg:pt-28">
             <div className="container">
@@ -13,19 +29,32 @@ const Product = () => {
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                            <a href="/images/product/wall4-1.jpg" target="_blank" rel="noopener noreferrer">
-                                <img className="hover:opacity-75" src="/images/product/wall4-1.jpg" style={{ borderRadius: '9px' }} />
-                            </a>
-                            <a href="/images/product/wall5-1.jpg" target="_blank" rel="noopener noreferrer">
-                                <img className="hover:opacity-75" src="/images/product/wall5-1.jpg" style={{ borderRadius: '9px' }} />
-                            </a>
-                            <a href="/images/product/wall6-1.png" target="_blank" rel="noopener noreferrer">
-                                <img className="hover:opacity-75" src="/images/product/wall6-1.png" style={{ borderRadius: '9px' }} />
-                            </a>
+                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/wall4-1.jpg" style={{ borderRadius: '9px' }} onClick={() => openModal('/images/product/wall4-1.jpg')} />
+                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/wall5-1.jpg" style={{ borderRadius: '9px' }} onClick={() => openModal('/images/product/wall5-1.jpg')} />
+                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/wall6-1.png" style={{ borderRadius: '9px' }} onClick={() => openModal('/images/product/wall6-1.png')} />
                         </div>
                     </div>
                 </div>
             </div>
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Image Modal"
+                style={{
+                    content: {
+                        top: '50%',
+                        left: '50%',
+                        right: 'auto',
+                        bottom: 'auto',
+                        marginRight: '-50%',
+                        transform: 'translate(-50%, -50%)',
+                    },
+                }}
+            >
+                <button onClick={closeModal} style={{ float: 'right'}}>×</button>
+                <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '80vh' }} />
+            </Modal>
         </section>
     );
 };
