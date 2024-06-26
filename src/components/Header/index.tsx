@@ -5,42 +5,53 @@ import { usePathname } from "next/navigation";
 import { translations } from "@/components/translation/translations"
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
+import LanguageSwitcher from './ToggleLanguage';
 import menuData from "./menuData";
+import { useTranslation } from 'react-i18next';
+
 
 const Header = () => {
-  // Navbar toggle
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+// Navbar toggle
+const [navbarOpen, setNavbarOpen] = useState(false);
+const navbarToggleHandler = () => {
+setNavbarOpen(!navbarOpen);
+};
 
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
+// Sticky Navbar
+const [sticky, setSticky] = useState(false);
+const handleStickyNavbar = () => {
+if (window.scrollY >= 80) {
+setSticky(true);
+} else {
+setSticky(false);
+}
+};
+useEffect(() => {
+window.addEventListener("scroll", handleStickyNavbar);
+});
 
-  // submenu handler
-  const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(-1);
-    } else {
-      setOpenIndex(index);
-    }
-  };
+// submenu handler
+const [openIndex, setOpenIndex] = useState(-1);
+const handleSubmenu = (index) => {
+if (openIndex === index) {
+setOpenIndex(-1);
+} else {
+setOpenIndex(index);
+}
+};
 
-  const usePathName = usePathname();
-  return (
-    <>
-      <header className={`header left-0 top-0 z-40 flex w-full items-center ${ sticky
+const usePathName = usePathname();
+
+const { t, i18n } = useTranslation();
+
+// Function to change language
+function changeLanguage(lng: string) {
+i18n.changeLanguage(lng);
+}
+
+return (
+<>
+    <header className={`header left-0 top-0 z-40 flex w-full items-center ${ sticky
         ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
         : "absolute bg-transparent" }`}>
         <div className="container">
@@ -107,7 +118,6 @@ const Header = () => {
                                             </Link>
                                             ))}
                                         </div>
-
                                     </>
                                     )}
                                 </li>
@@ -116,9 +126,7 @@ const Header = () => {
                         </nav>
                     </div>
                     <div className="flex items-center justify-end pr-16 lg:pr-0">
-                        {/* <button onClick={toggleLanguage}>
-                            {isThai ? "Eng" : "ไทย"}
-                        </button> */}
+                        {/* <LanguageSwitcher changeLanguage={changeLanguage} /> */}
                         <div>
                             <ThemeToggler />
                         </div>
@@ -127,8 +135,8 @@ const Header = () => {
             </div>
         </div>
     </header>
-    </>
-  );
+</>
+);
 };
 
 export default Header;

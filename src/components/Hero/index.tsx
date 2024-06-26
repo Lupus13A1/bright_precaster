@@ -6,6 +6,16 @@ import {translations} from "@/components/translation/translations"
 import Link from "next/link";
 
 const Hero = () => {
+  const [isThai, setIsThai] = useState(true); // State to track current language
+
+  const toggleLanguage = () => {
+    setIsThai(!isThai); // Toggle between Thai and English
+  };
+
+  // Function to translate text based on current language state
+  const translateText = (text) => {
+      return isThai ? (translations.th[text] || text) : (translations.en[text] || text);
+  };
 
   return (
     <>
@@ -22,9 +32,13 @@ const Hero = () => {
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-coloMain Features
 r-dark sm:text-lg md:text-xl">
-                  ผู้ผลิตและจำหน่ายชิ้นส่วนคอนกรีตสำเร็จรูป (Precast Concrete System) แบบครบวงจร โดยใช้เครื่องจักรที่เป็นระบบ Semi Automated Carrousel System ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตสำเร็จรูปด้วยเครื่องจักรระบบอัตโนมัติ นำเข้าเครื่องจักร จากประเทศเยอรมัน
+                  {translateText(
+                    "description"
+                  )}
                 </p>
-                
+                {/* <button onClick={toggleLanguage}>
+                  {isThai ? "English" : "ภาษาไทย"}
+                </button> */}
               </div>
             </div>
           </div>
@@ -272,6 +286,7 @@ r-dark sm:text-lg md:text-xl">
             </defs>
           </svg>
         </div>
+       
       </section>
     </>
   );

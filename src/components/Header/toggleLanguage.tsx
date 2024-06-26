@@ -1,27 +1,18 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const ToggleLanguage = ({ onLanguageChange }) => {
-  const [language, setLanguage] = useState('th');
+const LanguageSwitcher = ({ changeLanguage }) => {
+  const [isThai, setIsThai] = useState(false); // เริ่มต้นภาษาเป็นอังกฤษ
 
   const toggleLanguage = () => {
-    const newLanguage = language === 'th' ? 'en' : 'th';
-    setLanguage(newLanguage);
-    if (onLanguageChange) {
-      onLanguageChange(newLanguage);
-    }
+    setIsThai(prevIsThai => !prevIsThai); // สลับค่าของ isThai กลับและกลับไปข้างหน้า
+    changeLanguage(isThai ? 'en' : 'th'); // เปลี่ยนภาษาตามสถานะปัจจุบันของ isThai
   };
-
-  useEffect(() => {
-    if (onLanguageChange) {
-      onLanguageChange(language);
-    }
-  }, []);
 
   return (
     <button onClick={toggleLanguage}>
-      {language === 'en' ? 'ไทย' : 'Eng'}
+      {isThai ? 'English' : 'ไทย'}
     </button>
   );
 };
 
-export default ToggleLanguage;
+export default LanguageSwitcher;
