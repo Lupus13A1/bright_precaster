@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { translations } from "@/components/translation/translations"
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
-import LanguageSwitcher from './ToggleLanguage';
 import menuData from "./menuData";
 import { useTranslation } from 'react-i18next';
 
