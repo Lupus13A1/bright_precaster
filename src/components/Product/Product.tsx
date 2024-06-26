@@ -42,6 +42,9 @@ const Product = () => {
                 onRequestClose={closeModal}
                 contentLabel="Image Modal"
                 style={{
+                    overlay: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                    },
                     content: {
                         top: '50%',
                         left: '50%',
@@ -49,10 +52,13 @@ const Product = () => {
                         bottom: 'auto',
                         marginRight: '-50%',
                         transform: 'translate(-50%, -50%)',
-                    },
+                        background: 'none',
+                        border: 'none',
+                        padding: 0
+                    }
                 }}
             >
-                <button onClick={closeModal} style={{ float: 'right'}}>×</button>
+                <button onClick={closeModal} style={{ float: 'right', background: 'none', border: 'none', fontSize: '1.5em', cursor: 'pointer', color: 'white' }}></button>
                 <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '80vh' }} />
             </Modal>
         </section>
