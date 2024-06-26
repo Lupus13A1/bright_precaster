@@ -100,7 +100,7 @@ return (
 
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Cube.png" alt="blog" />
+                        <img className="object-cover object-center" src="/images/pastwork/TB.png" alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/cube">
                                 The Cube Loft
@@ -111,7 +111,7 @@ return (
 
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/logo-greenville2.jpg"
+                        <img className="object-cover object-center" src="/images/pastwork/green.png"
                             alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/green">
@@ -123,7 +123,7 @@ return (
 
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/logo-the-muve-บางแค3.jpg"
+                        <img className="object-cover object-center" src="/images/pastwork/muve.png"
                             alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/muve">
@@ -135,7 +135,7 @@ return (
 
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/logo-maxxi-prime2.jpg"
+                        <img className="object-cover object-center" src="/images/pastwork/max.png"
                             alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/maxxi">
@@ -148,7 +148,7 @@ return (
                 <div className="p-4 md:w-1/3">
                     <div className=" border-2 rounded-lg overflow-hidden">
                         <img className="object-cover object-center"
-                            src="/images/pastwork/288071781_116766511053366_6415027058580615632_n.jpg" alt="blog" />
+                            src="/images/pastwork/nc.png" alt="blog" />
                         <div className="p-6">
                             <a className="leading-relaxed mb-3 sm:text-lg" href="/noble">
                                 Noble Curve

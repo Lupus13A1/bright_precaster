@@ -46,7 +46,7 @@ module.exports = {
         "bg-color-dark": "#171C28",
         "body-color": {
           // DEFAULT: "#788293",
-          DEFAULT: "#bab59e",
+          DEFAULT: "#ba9e9e",
           dark: "#959CB1",
         },
         stroke: {
