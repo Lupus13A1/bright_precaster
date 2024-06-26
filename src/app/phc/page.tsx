@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 const PHC = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const PHC = () => {
 
     return (
         <>
-            <Breadcrumb pageName="PHC" description="PHC Hierarchy" />
+            <Pastwork pageName="PHC" description="PHC Hierarchy" />
 
             <section className="pb-[120px] pt-[120px]">
                 <div className="container">

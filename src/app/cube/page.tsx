@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Richton = () => {
@@ -25,8 +25,8 @@ const Richton = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="The Cube Loft" description="The Cube Loft" />
+            {/* Pastwork component */}
+            <Pastwork pageName="The Cube Loft" description="The Cube Loft" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

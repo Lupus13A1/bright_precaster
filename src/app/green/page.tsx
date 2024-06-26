@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Green = () => {
@@ -25,8 +25,8 @@ const Green = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Green Ville II " description="Green Ville II condominium @Sukhumvit 101" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Green Ville II " description="Green Ville II condominium @Sukhumvit 101" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

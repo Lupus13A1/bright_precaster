@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Maxxi = () => {
@@ -25,8 +25,8 @@ const Maxxi = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Maxxi Prime" description="Maxxi Prime" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Maxxi Prime" description="Maxxi Prime" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

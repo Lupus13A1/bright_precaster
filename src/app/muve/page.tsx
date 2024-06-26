@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Muve = () => {
@@ -25,8 +25,8 @@ const Muve = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="The Muve" description="The Muve บางแค" />
+            {/* Pastwork component */}
+            <Pastwork pageName="The Muve" description="The Muve บางแค" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

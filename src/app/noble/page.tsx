@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const NobleCurve = () => {
@@ -25,8 +25,8 @@ const NobleCurve = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Noble Curve" description="Noble Curve" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Noble Curve" description="Noble Curve" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

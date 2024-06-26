@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Icopenh = () => {
@@ -25,8 +25,8 @@ const Icopenh = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Icopenh" description="Icopenh-สุขุมวิท76" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Icopenh" description="Icopenh-สุขุมวิท76" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

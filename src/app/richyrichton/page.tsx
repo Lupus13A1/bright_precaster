@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 const Richyrichton = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const Richyrichton = () => {
 
     return (
         <>
-            <Breadcrumb pageName="Richy Richton" description="Richy Richton เพิ่มสิน" />
+            <Pastwork pageName="Richy Richton" description="Richy Richton เพิ่มสิน" />
 
             <section className="pb-[120px] pt-[120px]">
                 <div className="container">

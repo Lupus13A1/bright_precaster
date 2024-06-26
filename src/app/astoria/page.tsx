@@ -4,7 +4,7 @@
 
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 const Astoria = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Astoria = () => {
 
     return (
         <>
-            <Breadcrumb pageName="Astoria" description="Astoria-Ratchaphruek" />
+            <Pastwork pageName="Astoria" description="Astoria-Ratchaphruek" />
 
             <section className="pb-[120px] pt-[120px]">
                 <div className="container">

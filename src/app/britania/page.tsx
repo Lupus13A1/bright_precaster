@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Britania = () => {
@@ -25,8 +25,8 @@ const Britania = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Britania" description="Britania Ratchaphruek" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Britania" description="Britania Ratchaphruek" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

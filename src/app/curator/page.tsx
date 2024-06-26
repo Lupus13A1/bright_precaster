@@ -3,7 +3,7 @@
 // Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 // Component definition
 const Curator = () => {
@@ -25,8 +25,8 @@ const Curator = () => {
 
     return (
         <>
-            {/* Breadcrumb component */}
-            <Breadcrumb pageName="Curator" description="Curator Ratchapruek-Surinthorn" />
+            {/* Pastwork component */}
+            <Pastwork pageName="Curator" description="Curator Ratchapruek-Surinthorn" />
 
             {/* Gallery section */}
             <section className="pb-[120px] pt-[120px]">

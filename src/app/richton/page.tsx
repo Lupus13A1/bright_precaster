@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pastwork from "@/components/Common/pw";
 
 const Richton = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Richton = () => {
 
     return (
         <>
-            <Breadcrumb pageName="Richton" description="Richton สวนหลวง-พัฒนาการ" />
+            <Pastwork pageName="Richton" description="Richton สวนหลวง-พัฒนาการ" />
 
             <section className="pb-[120px] pt-[120px]">
                 <div className="container">
