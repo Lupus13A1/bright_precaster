@@ -6,7 +6,9 @@ import { translations } from "@/components/translation/translations"
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { useTranslation } from 'react-i18next';
+
+
+
 
 
 const Header = () => {
@@ -41,12 +43,6 @@ setOpenIndex(index);
 
 const usePathName = usePathname();
 
-const { t, i18n } = useTranslation();
-
-// Function to change language
-function changeLanguage(lng: string) {
-i18n.changeLanguage(lng);
-}
 
 return (
 <>
@@ -125,7 +121,6 @@ return (
                         </nav>
                     </div>
                     <div className="flex items-center justify-end pr-16 lg:pr-0">
-                        {/* <LanguageSwitcher changeLanguage={changeLanguage} /> */}
                         <div>
                             <ThemeToggler />
                         </div>

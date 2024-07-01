@@ -29,8 +29,9 @@ const [modalIsOpen, setModalIsOpen] = useState(false);
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[750px] md:max-w-[1800px] place-items-center">
-                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/stair1-1.png" onClick={() => openModal('/images/product/stair1-1.png')} />
                             <img className="hover:opacity-75 cursor-pointer" src="/images/product/stair2-1.png" style={{ borderRadius: '9px', width: '100%', height: 'auto' }} onClick={() => openModal('/images/product/stair2-1.png')} />
+                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/2.png" style={{ borderRadius: '9px',  width: '100%', height: 'auto' }} onClick={() => openModal('/images/product/2.png')} />
+                            <img className="hover:opacity-75 cursor-pointer" src="/images/product/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (2).png" style={{ borderRadius: '9px', width: '100%', height: 'auto' }} onClick={() => openModal('/images/product/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (2).png')} />
                         </div>
                     </div>
                 </div>

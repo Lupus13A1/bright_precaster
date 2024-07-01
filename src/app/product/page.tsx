@@ -22,7 +22,7 @@ const ProductPage = () => {
       />
       <Product />
       <ProductTwo />
-      <ProductThree />
+      {/* <ProductThree /> */}
       <ProductFour />
       <ProductFive />
       <ProductSix />

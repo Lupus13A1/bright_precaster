@@ -1,5 +1,10 @@
 export const translations = {
   en: {
+    "home": "Home",
+    "product": "Product",
+    "pastwork": "Pastwork",
+    "about": "About",
+    "contact ": "contact",
     "Bright Precaster Co.,Ltd.": "",
     "Main Features": "Main Features",
     description:
@@ -35,6 +40,11 @@ export const translations = {
       "Bright Precaster Co., Ltd. is located at 10/10 Moo 10, Bang Bua Thong Subdistrict, Bang Bua Thong District, Nonthaburi 11110. The premises include office buildings and factory buildings totaling 5,544 square meters, and a stock yard of 4,500 square meters, on an area of 44-1-23 rai. The machinery used is a Semi Automated Carrousel System imported from Germany, specializing in the production of precast reinforced concrete components.",
   },
   th: {
+    "home": "หน้าแรก",
+    "product": "สินค้า",
+    "pastwork": "ผลงาน",
+    "about": "เกี่ยวกับ",
+    "contact ": "ติดต่อ",
     "Bright Precaster Co.,Ltd.": "บริษัท ไบรท์พรีแคสเตอร์ จำกัด",
     "Main Features": "คุณสมบัติหลัก",
     description:
@@ -69,3 +79,6 @@ export const translations = {
       "บริษัท ไบร์ท พรีแคสเตอร์ จำกัด ตั้งอยู่เลขที่ 10/10 หมู่ 10 ต.บางบัวทอง อ.บางบัวทอง จ.นนทบุรี 11110 พื้นที่ประกอบด้วยอาคารสำนักงานและอาคารโรงงาน ขนาด 5,544 ตรม.และ Stock yard ขนาด 4,500 ตรม. บนพื้นที่ 44-1-23 ไร่ เครื่องจักรที่ใช้จะเป็นระบบ Semi Automated Carrousel System ซึ่งเป็นระบบการผลิตชิ้นส่วนคอนกรีตเสริมเหล็กสำเร็จรูปอัตโนมัติ นำเข้าเครื่องจักรจากประเทศเยอรมัน",
   },
 };
+export function translate(key, language) {
+  return translations[language][key] || key; 
+}
