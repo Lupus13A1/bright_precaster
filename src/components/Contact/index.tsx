@@ -4,44 +4,11 @@ import React, { useState } from 'react';
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    description: ''
-  });
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData({ ...formData, [id]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        console.log('Form submitted successfully');
-        setFormData({ name: '', email: '', description: '' });
-      } else {
-        const errorData = await response.json();
-        console.error('Form submission error:', errorData);
-      }
-    } catch (error) {
-      console.error('Form submission error:', error);
-    }
-  };
-
+  
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="px-2 py-10">
+    <section id="contact" className="py-30">
+      <div className="container px-5 py-30 mx-auto">
+        <div className="flex flex-wrap m-4">
           <div id="features" className="mx-auto max-w-6xl">
             <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
               <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
@@ -81,7 +48,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 สอบถามข้อมูลรายละเอียด
               </p>
-              <form onSubmit={handleSubmit}>
+              <form >
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -93,7 +60,7 @@ const Contact = () => {
                       </label>
                       <input
                         placeholder='Your Name'
-                        onChange={handleChange}
+                        
                         id='name'
                         type="text"
                         required
@@ -111,7 +78,7 @@ const Contact = () => {
                       </label>
                       <input
                         placeholder='example@gmail.com'
-                        onChange={handleChange}
+                        
                         id="email"
                         type="email"
                         required
@@ -129,7 +96,7 @@ const Contact = () => {
                       </label>
                       <textarea
                         placeholder='Comments'
-                        onChange={handleChange}
+                        
                         id="description"
                         required
                         rows={5}

@@ -24,7 +24,8 @@ const Video = () => {
               className="mx-auto max-w-[770px] overflow-hidden rounded-md"
               data-wow-delay=".15s"
             >
-              <div className="relative aspect-[77/40] items-center justify-center">
+              <div className="relative aspect-[77/40] items-center justify-center border-4 border-gray-500">
+
                 <Image src="/images/video/banner-popup-1-1000x600.png" alt="video image" fill />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
