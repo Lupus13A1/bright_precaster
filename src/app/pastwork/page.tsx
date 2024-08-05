@@ -1,168 +1,58 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-// import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-title: "Pastwork",
-// other metadata
+    title: "Work",
+    // other metadata
 };
 
-const Blog = () => {
-return (
-<>
-    <Breadcrumb pageName="Pastwork" description="ผลงงานที่ผ่านมาทั้งหมด" />
+const blogPosts = [
+    { href: "/britania", src: "/images/pastwork/Britania Ratchaphruek.jpg", title: "Britania Ratchaphruek-Nakhon in" },
+    { href: "/curator", src: "/images/pastwork/Curator(2).png", title: "Curator Ratchapruek-Surinthorn" },
+    { href: "/richton", src: "/images/pastwork/Richton Suan Luang-Phatthanakan.jpg", title: "Richton Suan Luang-Phatthanakan" },
+    { href: "/richyrichton", src: "/images/pastwork/Richy Richton เพิ่มสิน.jpg", title: "Richy Richton เพิ่มสิน" },
+    { href: "/astoria", src: "/images/pastwork/Astoria-Ratchaphruek.jpg", title: "The Astoria ราชพฤกษ์ รัตนาธิเบศร์" },
+    { href: "/icopenh", src: "/images/pastwork/logo_icopenh-1-1022x1024.jpg", title: "Icopenh สุขุมวิท76" },
+    { href: "/phc", src: "/images/pastwork/PHC.jpg", title: "PHC Hierarchy" },
+    { href: "/cube", src: "/images/pastwork/TB.png", title: "The Cube Loft" },
+    { href: "/green", src: "/images/pastwork/green.png", title: "Green Ville II condominium" },
+    { href: "/muve", src: "/images/pastwork/muve.png", title: "The Muve บางแค" },
+    { href: "/maxxi", src: "/images/pastwork/max.png", title: "Maxxi-Prime" },
+    { href: "/noble", src: "/images/pastwork/nc.png", title: "Noble Curve" },
+];
 
-    <section className="body-font">
-        <div className="container px-5 py-30 mx-auto">
-            <div className="flex flex-wrap m-4">
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Britania Ratchaphruek.jpg"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/britania">
-                                Britania Ratchaphruek-Nakhon in
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Curator(2).png" alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/curator">
-                                Curator Ratchapruek-Surinthorn
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center"
-                            src="/images/pastwork/Richton Suan Luang-Phatthanakan.jpg" alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/richton">
-                                Richton Suan Luang-Phatthanakan
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Richy Richton เพิ่มสิน.jpg"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/richyrichton">
-                                Richy Richton เพิ่มสิน
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/Astoria-Ratchaphruek.jpg"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/astoria">
-                                The Astoria ราชพฤกษ์ รัตนาธิเบศร์
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/logo_icopenh-1-1022x1024.jpg"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/icopenh">
-                                Icopenh สุขุมวิท76
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/PHC.jpg" alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/phc">
-                                PHC Hierarchy
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/TB.png" alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/cube">
-                                The Cube Loft
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/green.png"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/green">
-                                Green Ville II condominium
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/muve.png"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/muve">
-                                The Muve บางแค
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center" src="/images/pastwork/max.png"
-                            alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/maxxi">
-                                Maxxi-Prime
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="p-4 md:w-1/3">
-                    <div className=" border-2 rounded-lg overflow-hidden">
-                        <img className="object-cover object-center"
-                            src="/images/pastwork/nc.png" alt="blog" />
-                        <div className="p-6">
-                            <a className="leading-relaxed mb-3 sm:text-lg" href="/noble">
-                                Noble Curve
-                            </a>
-                        </div>
-                    </div>
-                </div>
+const BlogPost = ({ href, src, title }) => (
+    <div className="p-4 md:w-1/3">
+        <div className="border-2 rounded-lg overflow-hidden">
+            <a href={href}>
+                <img className="object-cover object-center" src={src} alt="blog" />
+            </a>
+            <div className="p-6">
+                <a className="leading-relaxed mb-3 sm:text-lg" href={href}>
+                    {title}
+                </a>
             </div>
         </div>
-    </section>
-
-
-</>
+    </div>
 );
+
+const Blog = () => {
+    return (
+        <>
+            <Breadcrumb pageName="Work" description="ผลงานที่ผ่านมาทั้งหมด" />
+
+            <section className="body-font">
+                <div className="container px-5 py-30 mx-auto">
+                    <div className="flex flex-wrap m-4">
+                        {blogPosts.map((post, index) => (
+                            <BlogPost key={index} {...post} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 };
 
 export default Blog;
