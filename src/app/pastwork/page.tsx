@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Image from "next/image";
 
 import { Metadata } from "next";
 
@@ -26,7 +27,7 @@ const BlogPost = ({ href, src, title }) => (
     <div className="p-4 md:w-1/3">
         <div className="border-2 rounded-lg overflow-hidden">
             <a href={href}>
-                <img className="object-cover object-center" src={src} alt="blog" />
+                <Image className="object-cover object-center" src={src} alt="blog" width={500} height={300} layout="responsive" />
             </a>
             <div className="p-6">
                 <a className="leading-relaxed mb-3 sm:text-lg" href={href}>

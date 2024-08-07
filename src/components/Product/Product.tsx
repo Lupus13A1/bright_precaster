@@ -24,6 +24,7 @@ const Product = () => {
                 <img
                     className="hover:opacity-75 cursor-pointer"
                     src={src}
+                    loading="lazy" // Add lazy loading
                     style={{ borderRadius: '9px' }}
                     onClick={() => openModal(src)}
                 />
