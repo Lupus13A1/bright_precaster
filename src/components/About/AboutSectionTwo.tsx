@@ -14,14 +14,14 @@ const AboutSectionTwo = () => {
                 src="/images/about/Picture4.png"
                 alt="about image"
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                className="drop-shadow-three dark:hidden dark:drop-shadow-none transition duration-300 ease-in-out hover:scale-110"
                 style={{ borderRadius: '10px' }}
               />
               <Image
                 src="/images/about/Picture4.png"
                 alt="about image"
                 fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                className="hidden drop-shadow-three dark:block dark:drop-shadow-none transition duration-300 ease-in-out hover:scale-110"
                 style={{ borderRadius: '10px' }}
               />
             </div>

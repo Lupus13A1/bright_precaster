@@ -22,7 +22,7 @@ const Product = () => {
         imageArray.map((src, index) => (
             <div key={index}>
                 <img
-                    className="hover:opacity-75 cursor-pointer"
+                    className="hover:opacity-55 cursor-pointer"
                     src={src}
                     loading="lazy" // Add lazy loading
                     style={{ borderRadius: '9px' }}
@@ -43,7 +43,7 @@ const Product = () => {
 
     return (
         
-        <section id="about" className="pt-14 md:pt-10 lg:pt-10">
+        <section id="about" className="pt-14 md:pt-10 lg:pt-10 animate-fade-up animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-linear">
             {sections.map((section, index) => (
                 <div className="container px-5 py-30 mx-auto" key={index}>
                     <div className="border-b border-body-color/[.35] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28"><br></br>
@@ -81,7 +81,7 @@ const Product = () => {
                 >
                     &times;
                 </button>
-                <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '80vh' }} />
+                <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '80vh' }} className=""/>
             </Modal>
         </section>
     );

@@ -29,14 +29,14 @@ const AboutSectionOne = () => {
                   src="/images/about/Picture3.png"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 transition duration-300 ease-in-out hover:scale-110 "
                   style={{ borderRadius: '10px' }}
                 />
                 <Image
                   src="/images/about/Picture3.png"
                   alt="about-image"
                   fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 transition duration-300 ease-in-out hover:scale-110"
                   style={{ borderRadius: '10px' }}
                 />
               </div>
