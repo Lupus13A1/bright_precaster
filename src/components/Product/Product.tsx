@@ -42,6 +42,7 @@ const Product = () => {
     ];
 
     return (
+        
         <section id="about" className="pt-14 md:pt-10 lg:pt-10">
             {sections.map((section, index) => (
                 <div className="container px-5 py-30 mx-auto" key={index}>

@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Image from "next/image";
 
 import { Metadata } from "next";
 
@@ -27,7 +26,7 @@ const BlogPost = ({ href, src, title }) => (
     <div className="p-4 md:w-1/3">
         <div className="border-2 rounded-lg overflow-hidden">
             <a href={href}>
-                <Image className="object-cover object-center" src={src} alt="blog" width={500} height={300} layout="responsive" />
+                <img className="object-cover object-center" src={src} alt="blog" />
             </a>
             <div className="p-6">
                 <a className="leading-relaxed mb-3 sm:text-lg" href={href}>
@@ -44,13 +43,124 @@ const Blog = () => {
             <Breadcrumb pageName="Work" description="ผลงานที่ผ่านมาทั้งหมด" />
 
             <section className="body-font">
-                <div className="container px-5 py-30 mx-auto">
-                    <div className="flex flex-wrap m-4">
-                        {blogPosts.map((post, index) => (
-                            <BlogPost key={index} {...post} />
-                        ))}
-                    </div>
-                </div>
+  {/* <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
+        <div className="rounded-2xl p-1 cursor-pointer hover:-translate-y-2 transition-all relative text-body-color duration-300 hover:text-red dark:text-body-color-dark dark:hover:text-red">
+            <a href="/britania">
+          <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          <div>
+            <h3 className="text-lg font-extrabold ">Britania</h3>
+            <p className="text-sm mt-2">Britania Ratchaphruek-Nakhon in</p>
+          </div>
+          </a>
+        </div>
+        
+    </div>
+  </div>
+   */}
+  <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        <a>
+        <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+          <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+           <img src="/images/pastwork/Britania Ratchaphruek.jpg" className="rounded-md" />
+          </div>
+          <div>
+            <h3 className="text-lg font-extrabold text-gray-800">Product Name</h3>
+            <p className="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        </a>
+
+        
+    </div>
+  </div>
+
+
             </section>
         </>
     );
