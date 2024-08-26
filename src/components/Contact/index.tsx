@@ -6,12 +6,12 @@ import NewsLatterBox from "./NewsLatterBox";
 const Contact = () => {
   
   return (
-    <section id="contact" className="py-30">
+    <section id="contact" className="py-30 animate-fade-up animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-linear">
       <div className="container px-5 py-30 mx-auto">
         <div className="flex flex-wrap m-4">
           <div id="features" className="mx-auto max-w-6xl">
             <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3 ">
-              <li className="rounded-xl bg-white px-6 py-8 shadow-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
+              <li className="rounded-xl bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
                 <img src="/images/about/home-1-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
                 <h3 className="my-3 font-display font-medium text-black dark:text-white">ที่ตั้งบริษัท</h3>
                 <a className="mt-1.5 text-sm leading-6 text-secondary-500 text-black dark:text-white" href='https://www.google.com/maps/place/%E0%B9%84%E0%B8%9A%E0%B8%A3%E0%B9%8C%E0%B8%97+%E0%B8%9E%E0%B8%A3%E0%B8%B5%E0%B9%81%E0%B8%84%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C+%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94+(+Precast+Concrete+Factory+)/@13.965552,100.378698,18z/data=!4m14!1m7!3m6!1s0x30e289311d5242e9:0xdddff78eefc975c9!2z4LmE4Lia4Lij4LmM4LiXIOC4nuC4o-C4teC5geC4hOC4quC5gOC4leC4reC4o-C5jCDguIjguLPguIHguLHguJQgKCBQcmVjYXN0IENvbmNyZXRlIEZhY3RvcnkgKQ!8m2!3d13.9655516!4d100.3786984!16s%2Fg%2F1jgltzd1q!3m5!1s0x30e289311d5242e9:0xdddff78eefc975c9!8m2!3d13.9655516!4d100.3786984!16s%2Fg%2F1jgltzd1q?hl=th&entry=ttu'>
@@ -19,14 +19,14 @@ const Contact = () => {
                   บางบัวทอง, นนทบุรี 10/10 หมู่10 รหัสไปรษณีย์ 11110
                 </a>
               </li>
-              <li className="rounded-xl bg-white px-6 py-8 shadow-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
+              <li className="rounded-xl bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
                 <img src="/images/about/mail-alt-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
                 <h3 className="my-3 font-display font-medium text-black dark:text-white">E-mail</h3>
                 <a className="mt-1.5 text-sm leading-6 text-secondary-500 text-black dark:text-white" href='mailto:Bright_marketing@brightprecaster.com'>
                   Bright_marketing@brightprecaster.com
                 </a>
               </li>
-              <li className="rounded-xl bg-white px-6 py-8 shadow-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
+              <li className="rounded-xl bg-white px-8 py-11 shadow-three dark:bg-gray-dark">
                 <img src="/images/about/call-medicine-svgrepo-com.svg" alt="" className="mx-auto h-10 w-10" />
                 <h3 className="my-3 font-display font-medium  text-black dark:text-white">ติดต่อ</h3>
                 <a className="mt-1.5 text-sm leading-6 text-secondary-500 text-black dark:text-white" href='tel:021507100101'>

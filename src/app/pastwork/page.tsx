@@ -26,7 +26,7 @@ const Blog = () => {
     return (
         <>
             <Breadcrumb pageName="Work" description="ผลงานที่ผ่านมาทั้งหมด" />
-            <section className="body-font">
+            <section className="body-font animate-fade-up animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-linear">
                 <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-xl:gap-3 gap-6">
                         {blogPosts.map((post) => (
