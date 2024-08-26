@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Image from 'next/image'; 
 import SectionTitle from "../Common/SectionTitle";
 
 const Product = () => {
@@ -21,10 +22,13 @@ const Product = () => {
     const renderImages = (imageArray) => (
         imageArray.map((src, index) => (
             <div key={index}>
-                <img
-                    className="hover:opacity-55 cursor-pointer"
+                <Image
                     src={src}
-                    loading="lazy" // Add lazy loading
+                    alt={`Image ${index}`}
+                    className="hover:opacity-55 cursor-pointer "
+                    layout="responsive"
+                    width={300}
+                    height={300} 
                     style={{ borderRadius: '9px' }}
                     onClick={() => openModal(src)}
                 />
@@ -42,7 +46,6 @@ const Product = () => {
     ];
 
     return (
-        
         <section id="about" className="pt-14 md:pt-10 lg:pt-10 animate-fade-up animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-linear">
             {sections.map((section, index) => (
                 <div className="container px-5 py-30 mx-auto" key={index}>
@@ -81,7 +84,14 @@ const Product = () => {
                 >
                     &times;
                 </button>
-                <img src={selectedImage} alt="Selected" style={{ maxWidth: '100%', maxHeight: '80vh' }} className=""/>
+                <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    layout="responsive"
+                    width={1200} 
+                    height={800} 
+                    style={{ maxWidth: '100%', maxHeight: '80vh' }}
+                />
             </Modal>
         </section>
     );

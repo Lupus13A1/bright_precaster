@@ -1,8 +1,8 @@
 'use client';
 
-// Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Image from "next/image"; 
 import Pastwork from "@/components/Common/pw";
 
 // Component definition
@@ -29,30 +29,71 @@ const Richton = () => {
             <Pastwork pageName="The Cube Loft" description="The Cube Loft" />
 
             {/* Gallery section */}
-            <section className="pb-[120px] pt-[120px]">
+            <section className="pb-[120px] ">
                 <div className="container">
                     <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
                         ผลงาน – The Cube Loft
                     </h2>
                     <div className="grid grid-cols-3 gap-6">
-                        {/* Replace image paths with your actual image paths */}
                         <div onClick={() => openModal("/images/pastwork/M-001-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-001-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-001-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/M-002-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-002-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-002-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/M-003-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-003-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-003-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/M-004-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-004-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-004-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/M-005-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-005-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-005-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/M-006-1536x1152.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/M-006-1536x1152.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/M-006-1536x1152.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={375}
+                            />
                         </div>
                     </div>
                 </div>
@@ -82,9 +123,16 @@ const Richton = () => {
                 }}
             >
                 {/* Close button */}
-                <button onClick={closeModal} style={{ float: "right", background: "none", border: "none", fontSize: "1.5em", cursor: "pointer", color: "white" }}></button>
+                <button onClick={closeModal} style={{ float: "right", background: "none", border: "none", fontSize: "1.5em", cursor: "pointer", color: "white" }}>×</button>
                 {/* Display selected image */}
-                <img src={selectedImage} alt="Selected" style={{ maxWidth: "100%", maxHeight: "80vh" }} />
+                <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    layout="responsive"
+                    width={800}  
+                    height={600}
+                    style={{ maxWidth: "100%", maxHeight: "80vh" }}
+                />
             </Modal>
         </>
     );

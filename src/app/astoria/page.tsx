@@ -1,9 +1,8 @@
 'use client';
 
-// src/app/astoria/page.tsx
-
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Image from "next/image"; 
 import Pastwork from "@/components/Common/pw";
 
 const Astoria = () => {
@@ -24,13 +23,13 @@ const Astoria = () => {
         <>
             <Pastwork pageName="Astoria" description="Astoria-Ratchaphruek" />
 
-            <section className="pb-[120px] pt-[120px]">
+            <section className="pb-[120px]">
                 <div className="container">
                     <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
                         ผลงาน – แอสโทเรีย ราชพฤกษ์-รัตนาธิเบศร์
                     </h2>
                     <div className="grid grid-cols-3 gap-6">
-                        {/* Replace image paths with your actual image paths */}
+                       
                         {[
                             "/images/pastwork/G-001.jpg",
                             "/images/pastwork/G-002.jpg",
@@ -40,7 +39,14 @@ const Astoria = () => {
                             "/images/pastwork/G-006.jpg",
                         ].map((src, index) => (
                             <div key={index} onClick={() => openModal(src)} className="cursor-pointer">
-                                <img className="h-auto max-w-full rounded-lg" src={src} alt={`Gallery image ${index + 1}`} />
+                                <Image
+                                    className="h-auto max-w-full rounded-lg"
+                                    src={src}
+                                    alt={`Gallery image ${index + 1}`}
+                                    layout="responsive"
+                                    width={500}  
+                                    height={300} 
+                                />
                             </div>
                         ))}
                     </div>
@@ -73,7 +79,14 @@ const Astoria = () => {
                 {/* Close button */}
                 <button onClick={closeModal} style={{ float: "right", background: "none", border: "none", fontSize: "1.5em", cursor: "pointer", color: "white" }}>×</button>
                 {/* Display selected image */}
-                <img src={selectedImage} alt="Selected" style={{ maxWidth: "100%", maxHeight: "80vh" }} />
+                <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    layout="responsive"
+                    width={800} 
+                    height={600} 
+                    style={{ maxWidth: "100%", maxHeight: "80vh" }}
+                />
             </Modal>
         </>
     );

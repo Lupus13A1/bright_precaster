@@ -1,8 +1,8 @@
 'use client';
 
-// Import necessary libraries and components
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Image from "next/image"; 
 import Pastwork from "@/components/Common/pw";
 
 // Component definition
@@ -29,32 +29,72 @@ const Britania = () => {
             <Pastwork pageName="Britania" description="Britania Ratchaphruek" />
 
             {/* Gallery section */}
-            <section className="pb-[120px] pt-[120px]">
+            <section className="pb-[120px]">
                 <div className="container">
                     <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
                         ผลงาน – บริทาเนีย ราชพฤกษ์ นครอินทร์
                     </h2>
                     <div className="grid grid-cols-3 gap-6">
-                        {/* Replace image paths with your actual image paths */}
                         <div onClick={() => openModal("/images/pastwork/H-001.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-001.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-001.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/H-002.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-002.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-002.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/H-003.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-003.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-003.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/H-004.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-004.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-004.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/H-007.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-007.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-007.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
                         <div onClick={() => openModal("/images/pastwork/H-008.jpg")}>
-                            <img className="h-auto max-w-full rounded-lg cursor-pointer" src="/images/pastwork/H-008.jpg" alt="Gallery image" />
+                            <Image
+                                className="h-auto max-w-full rounded-lg cursor-pointer"
+                                src="/images/pastwork/H-008.jpg"
+                                alt="Gallery image"
+                                layout="responsive"
+                                width={500}  
+                                height={300} 
+                            />
                         </div>
-              
                     </div>
                 </div>
             </section>
@@ -83,9 +123,16 @@ const Britania = () => {
                 }}
             >
                 {/* Close button */}
-                <button onClick={closeModal} style={{ float: "right", background: "none", border: "none", fontSize: "1.5em", cursor: "pointer", color: "white" }}></button>
+                <button onClick={closeModal} style={{ float: "right", background: "none", border: "none", fontSize: "1.5em", cursor: "pointer", color: "white" }}>×</button>
                 {/* Display selected image */}
-                <img src={selectedImage} alt="Selected" style={{ maxWidth: "100%", maxHeight: "80vh" }} />
+                <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    layout="responsive"
+                    width={800} 
+                    height={600} 
+                    style={{ maxWidth: "100%", maxHeight: "80vh" }}
+                />
             </Modal>
         </>
     );

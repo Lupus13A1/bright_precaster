@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
+import Image from "next/image"; // นำเข้า Image จาก next/image
 
 export const metadata: Metadata = {
     title: "Work",
@@ -19,7 +20,6 @@ const blogPosts = [
     { href: "/astoria", src: "/images/pastwork/Astoria-Ratchaphruek.jpg", title: "The Astoria", second: "The Astoria ราชพฤกษ์ รัตนาธิเบศร์" },
     { href: "/phc", src: "/images/pastwork/PHC.jpg", title: "PHC Hierarchy" ,second:"PHC Hierarchy" },
     { href: "/muve", src: "/images/pastwork/muve.png", title: "The Muve" ,second:"he Muve บางแค" },
-    
 ];
 
 const Blog = () => {
@@ -33,7 +33,14 @@ const Blog = () => {
                             <a key={post.href} href={post.href}>
                                 <div className="bg-white px-5 py-11 shadow-three dark:bg-gray-dark rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
                                     <div className="w-5/6 overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-                                        <img src={post.src} className="rounded-md" alt={post.title} />
+                                        <Image
+                                            src={post.src}
+                                            alt={post.title}
+                                            className="rounded-md"
+                                            layout="responsive"
+                                            width={500} // คุณสามารถเปลี่ยนขนาดตามที่ต้องการ
+                                            height={300}
+                                        />
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-extrabold text-black dark:text-white">{post.title}</h3>
