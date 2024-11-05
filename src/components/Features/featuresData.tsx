@@ -1,10 +1,11 @@
 import { Feature } from "@/types/feature";
+import Image from "next/image";
 
 const featuresData: Feature[] = [
   {
     id: 1,
     icon: (
-      <img src="/images/carrousel/01plotter-1024x922.jpg" alt="Plotter" style={{ borderRadius: '8px' }} />
+      <Image src="/images/carrousel/01plotter-1024x922.jpg" alt="Plotter" style={{ borderRadius: '8px' }} />
     ),
     title: "เครื่องวาดแบบ (Plotter)",
     paragraph:
@@ -13,7 +14,7 @@ const featuresData: Feature[] = [
   {
     id: 2,
     icon: (
-      <img src="/images/carrousel/05spreader-1024x922.jpg" alt="Spreader" style={{ borderRadius: '8px' }} />
+      <Image src="/images/carrousel/05spreader-1024x922.jpg" alt="Spreader" style={{ borderRadius: '8px' }} />
     ),
     title: "เทคอนกรีต (Spreader)",
     paragraph:
@@ -22,7 +23,7 @@ const featuresData: Feature[] = [
   {
     id: 3,
     icon: (
-      <img src="/images/carrousel/06compacting-1024x922.jpg" alt="Compacting" style={{ borderRadius: '8px' }} />
+      <Image src="/images/carrousel/06compacting-1024x922.jpg" alt="Compacting" style={{ borderRadius: '8px' }} />
     ),
     title: "การทำให้คอนกรีตแน่น (Compacting)",
     paragraph:
@@ -31,7 +32,7 @@ const featuresData: Feature[] = [
   {
     id: 4,
     icon: (
-      <img src="/images/carrousel/07smoothing-1024x922.jpg" alt="Smoothing" style={{ borderRadius: '8px' }}  />
+      <Image src="/images/carrousel/07smoothing-1024x922.jpg" alt="Smoothing" style={{ borderRadius: '8px' }}  />
     ),
     title: "ขัดผิวหน้า (Smoothing)",
     paragraph:
@@ -40,7 +41,7 @@ const featuresData: Feature[] = [
   {
     id: 5,
     icon: (
-      <img src="/images/carrousel/08curing-1024x922.jpg" alt="Curing" style={{ borderRadius: '8px' }}  />
+      <Image src="/images/carrousel/08curing-1024x922.jpg" alt="Curing" style={{ borderRadius: '8px' }}  />
     ),
     title: "ห้องบ่มคอนกรีต(Curing)",
     paragraph:
@@ -49,7 +50,7 @@ const featuresData: Feature[] = [
   {
     id: 6,
     icon: (
-      <img src="/images/carrousel/09tilting-1024x918.jpg" alt="Tilting" style={{ borderRadius: '8px' }}  />
+      <Image src="/images/carrousel/09tilting-1024x918.jpg" alt="Tilting" style={{ borderRadius: '8px' }}  />
     ),
     title: "ถอดออกจากแบบ (Tilting)",
     paragraph:
